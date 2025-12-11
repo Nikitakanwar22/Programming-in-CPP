@@ -3,30 +3,28 @@ using namespace std;
 
 int main() {
     float income;      
-    float taxRate, taxAmount;
+    float tax; 
 
     cout << "Enter income in lakhs: ";
     cin >> income;
 
     if (income < 3) {
-        taxRate = 0.0;
+        tax = 0.0 * income;
     }
     else if (income < 5) {
-        taxRate = 0.10;
+        tax = 0.1 * income;
     }
     else if (income < 7) {
-        taxRate = 0.20;
+        tax = 0.2 * income;
     }
     else if (income < 10) {
-        taxRate = 0.30;
+        tax = 0.3 * income;
     }
     else {
-        taxRate = 0.40;
+        tax = 0.4 * income;
     }
 
-    taxAmount = (income * 100000) * taxRate;
-
-    cout << "Tax Payable: ₹" << taxAmount;
+    cout << "Tax Payable: ₹" << tax * 100000;
 
     return 0;
 }
