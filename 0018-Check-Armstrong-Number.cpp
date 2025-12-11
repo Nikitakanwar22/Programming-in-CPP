@@ -1,25 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int number;
-    cout << "Enter a 3 digit number: ";
-    cin >> number;
+int main()
+{
 
-    int num = number;
-    int dig1 = num % 10;
-    num /= 10;
-    int dig2 = num % 10;
-    num /= 10;
-    int dig3 = num;
-
-    int sum = dig1*dig1*dig1 + dig2*dig2*dig2 + dig3*dig3*dig3;
-
-    if (number == sum) {
-        cout << number << " is an Armstrong number";
-    } else {
-        cout << number << " is not an Armstrong number";
+    int n, sum = 0;
+    cout << "Enter the number :";
+    cin >> n;
+    int num = n;
+    while (num > 0)
+    {
+        int dig = num % 10;
+        sum += (dig * dig * dig);
+        num = num / 10;
     }
-
+    if (n == sum)
+    {
+        cout << "Number is armstrong";
+    }
+    else
+    {
+        cout << "Not a armstrong";
+    }
     return 0;
 }
