@@ -1,13 +1,16 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int n,i=1;
-    cout<<"Enter the n numbers : ";
-    cin>>n;
-    while(i<=n)
-    {
-      cout<<i<<" ";
+
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    int i = 1;
+    while (i <= n) {
+        cout << i << " ";
         i++;
-    }  
+    }
+
     return 0;
 }

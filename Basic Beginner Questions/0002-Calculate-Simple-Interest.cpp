@@ -1,15 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int t,r,p;
-    cout<<"Enter the Time : ";
-    cin>>t;
-    cout<<"Enter the rate : ";
-    cin>>r;
-    cout<<"Enter the Principal : ";
-    cin>>p;
-    int Si= (t*r*p)/100;
-    cout<<"Simple interest is : "<<Si; 
+
+int main() {
+    float time, rate, principal;
     
+    cout << "Enter the Time: ";
+    cin >> time;
+
+    cout << "Enter the Rate: ";
+    cin >> rate;
+
+    cout << "Enter the Principal: ";
+    cin >> principal;
+
+    float SI = (time * rate * principal) / 100;
+
+    cout << "Simple Interest is: " << SI;
+
     return 0;
 }
