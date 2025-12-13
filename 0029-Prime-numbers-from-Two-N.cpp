@@ -22,6 +22,5 @@ int main()
             cout << curr << " ";
         }
     }
-    cout << endl;
     return 0;
 }
